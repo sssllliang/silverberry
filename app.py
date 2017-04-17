@@ -12,6 +12,7 @@ from firebase import firebase
 import pyrebase
 # Flask app should start in global layout
 app = Flask(__name__)
+'''
 firebase = firebase.FirebaseApplication('https://silverberry-ai.firebaseio.com', authentication=None) 
 
 
@@ -29,6 +30,7 @@ firebase = pyrebase.initialize_app(config)
 
 db = firebase.database()
 FIREBASE_URL="https://silverberry-ai.firebaseio.com"
+'''
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
@@ -84,7 +86,7 @@ def makeWebhookResult(req):
   }
 
 '''
-    people = {'Smith':"data mining", 'John':"NLP", 'Lisa':"data analysis", 'Tom':"statistics", 'Sellina':"R"}
+    people = {'data mining':"Smith", 'NLP':"John", 'Data analysis':"Lisa", 'Statistics':"Lucy", 'R':"Selina"}
 
     speech = "Here are the people you want :" + str(people[skill])
 
