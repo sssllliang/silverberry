@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "silverberry-ai",
+    "matchbot": "silverberry-ai",
+    "aihire": "silverberry-ai"
+  }
+}

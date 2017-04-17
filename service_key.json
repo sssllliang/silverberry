@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "silverberry-ai",
+  "private_key_id": "9e9724ac9ccf265686970c17daa017227c36a648",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9MIJG1myzM06p\num8Z4W/5hXXVEdYwtod9CG68pS2Vu6kXolas/EOXswCDc8Wrv7oOJvnFDOG6BCID\nJAdzsu8eBr1fZLQT529H7vc9DEmVUFBlwXOsVpSH8yCj9xY9VGYsP+XKEp0Uj+/F\nfVcpBlTKJJ+8PPYcScQYVtlVrs02WOBh7AAqs0ElhaKho/c75iKlsGxaZgt5PPDa\nxunvbljTJrqt2Dln65RtAvh6AW5qS0+AMovg9tRhBwOmkfRmZMoSvvr7BfBbx0Mt\ncfESCGji894XVJsx0bc7tdENNbh5EhNsiCwQzSaTtpBEKycvdXmPynZrKF0YcGPM\nm6cK6pX7AgMBAAECggEAXQvGhuBehaPuRDuU+L2PPMEOusQS+9JJwIytKcpzKPkq\nqJ0G0/0doTZAQmZmCZo5/0vb+7XiLoJp1/GYWKbgQ3w9FvWIO2HPsSkuH7AzYGQn\npmQGZ/QNCO/iVcHoBjHELm8erMuKxdokqpSCkYKzoNdyWDoDMNZ2wyGzshhOhTNH\n7UwIodqC4Oeb/qYFvNogQld6vuMCwc+HBnm+ORWgxWD98vv1izgqYKn6kbz84pYH\nVlGIpM1yiJZfBFoD8ZhrwKFGU3ac9UzjI6AzTmg3FtBiSzFKWxzpxZZE4FPBA3lq\nYYUFvaMGMVGHpxFmvy9pRlxiSMMMtLti7LAsbk1xQQKBgQDroBHiipQ4KKpBpdrA\nczcjpqif3dTrviyx5Ci8uxGttFGCYA1YYSu60A1LK/+D6j0oJqDkZ4Wq53KDyudt\nWIAu7SZe1TOlcgIVRK+PtX6m0mrQvbQxC7n0fmIZdrnOdEfRzoemlmkUn2kOAVqR\nzHuD4JbssAleqfwbc3x8RR5ZzQKBgQDNjILUQRreElBAl6HI5s1kDUPuHKPrJTg0\nn08IZI7JRxpTBblGQEVNP4Wx6d99Fr9Zgu0YdeYkqVq+zc5syKn69LHHonJIBdcH\nyBLUYPU5FNw3Yn5ghPZ9pwY+PSSJce5tX1tjdqLRC9CE7MYuMa872Xk8TJVziURg\nbc+bYF/G5wKBgCdeWV6mlNlFQh0x3vjkx0O3ptj/MYIqBkG6w2u1PeDuDehgsBoi\nMjJGbNIwicK6snkw6xT+jwDdJu8KSdylOtWcXhreOIDeKabwEP1L79tjsOErsR24\nvdsx+qYShj0OhKlzforA+tGtSNpEM6PErKZ+Mfld+FLOyAa2JwiEa+vJAoGAT4HY\nYU3FnLysui9s7w8Hx3myGvqNFTnSYdh1c6Oh741HS3HdVqUpqVW22zjBr9sKrQ8N\nsvZ3zRqM9V0aSc3coivgUH4vglhv8pybW/cdI7VD8VBx3dfQmI3wxkZUSa3+MeQ+\nr1yGYiIVyDTl+5xQUfAvCvn8nTItdrdDJLDEm2UCgYEAn2NGwYaqJzSt4vq4InsV\nqmLIui9XkPsawv6fKaz+depJlBEzGJ+QaNSm9heNQntY+2g/ZCtH/MGSKqmb2LYl\n52oxFdM9poOxPQ4gpHZi6wcm3RJIfkizErCeOUr36h2+/Wu+gEuOZYL3HlxhGu11\notc8ocRC3y3W3Au+AmizNPc=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ai-hire@silverberry-ai.iam.gserviceaccount.com",
+  "client_id": "101600959993318294859",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ai-hire%40silverberry-ai.iam.gserviceaccount.com"
+}
