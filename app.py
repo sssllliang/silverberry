@@ -50,7 +50,8 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     skill = parameters.get("skills")
-     
+ 
+ '''    
     people = {
       "person1" : {
         "name" : "Smith",
@@ -82,8 +83,8 @@ def makeWebhookResult(req):
       }
   }
 
-
-    #people = {'Europe':100, 'North America':200, 'South America':300, 'Asia':400, 'Africa':500}
+'''
+    people = {'Smith':"data mining", 'John':"NLP", 'Lisa':"data analysis", 'Tom':"statistics", 'Sellina':"R"}
 
     speech = "Here are the people you want :" + str(people[skill])
 
