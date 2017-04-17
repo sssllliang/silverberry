@@ -88,7 +88,7 @@ def makeWebhookResult(req):
 '''
     people = {'data mining':"Smith", 'NLP':"John", 'Data analysis':"Lisa", 'Statistics':"Lucy", 'R':"Selina"}
 
-    speech = "Here are the people you want :" + str(people[skill])
+    speech = "The people who has the skill of " + skill + " is " + str(people[skill]) + "."
 
     print("Response:")
     print(speech)
