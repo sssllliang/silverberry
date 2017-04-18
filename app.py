@@ -3,7 +3,7 @@
 import urllib
 import json
 import os
-
+import apiai
 from flask import Flask
 from flask import request
 from flask import make_response
@@ -12,6 +12,8 @@ from flask import jsonify
 #import pyrebase
 # Flask app should start in global layout
 app = Flask(__name__)
+CLIENT_ACCESS_TOKEN = '4837ae5d33c5469eb61ec9fd176673e0'
+
 '''
 firebase = firebase.FirebaseApplication('https://silverberry-ai.firebaseio.com', authentication=None) 
 
@@ -47,8 +49,8 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-    if req.get("result").get("action") != "find_talent":
-        return {}
+    if req.get("result").get("action")!= "find_talent_with_skills":
+      return {}
     result = req.get("result")
     parameters = result.get("parameters")
     skill = parameters.get("skills")
