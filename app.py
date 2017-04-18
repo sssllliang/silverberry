@@ -8,8 +8,8 @@ from flask import Flask
 from flask import request
 from flask import make_response
 from flask import jsonify
-from firebase import firebase
-import pyrebase
+#from firebase import firebase
+#import pyrebase
 # Flask app should start in global layout
 app = Flask(__name__)
 '''
@@ -53,8 +53,10 @@ def makeWebhookResult(req):
     parameters = result.get("parameters")
     skill = parameters.get("skills")
 
-    people = {'data mining':Smith, 'NLP':John, 'Data analysis':Lisa, 'Statistics':Lucy, 'R':Selina}
-    speech = "The people who has the skill of " + skill + " is " + str(people[skill]) + "."
+    #people = {'data mining':Smith, 'NLP':John, 'Data analysis':Lisa, 'Statistics':Lucy, 'R':Selina}
+    people = {'data mining':"Smith", 'NLP':"John", 'Data analysis':"Lisa", 'Statistics':"Lucy", 'R':"Selina"}
+
+    speech = "The people who has the skill of" + skill + "is" + people[skill] + "."
 
     print("Response:")
     print(speech)
