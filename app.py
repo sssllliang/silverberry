@@ -52,42 +52,8 @@ def makeWebhookResult(req):
     result = req.get("result")
     parameters = result.get("parameters")
     skill = parameters.get("skills")
- 
- '''    
-    people = {
-      "person1" : {
-        "name" : "Smith",
-        "skill" : "statistics"
-      },
-      "person2" : {
-        "name" : "John",
-        "skill" : "machine learning"
-      },
-      "person3" : {
-        "name" : "Lisa",
-        "skill" : "data mining"
-      },
-      "person4" : {
-        "name" : "Tom",
-        "skill" : "NLP, ML, DL"
-      },
-      "person5" : {
-        "name" : "Sellina",
-        "skill" : "python, R, database"
-      },
-      "person6" : {
-        "name" : "Michale",
-        "skill" : "natural language processing"
-      },
-      "person7" : {
-        "name" : "Terry",
-        "skill" : "data analysis"
-      }
-  }
 
-'''
     people = {'data mining':Smith, 'NLP':John, 'Data analysis':Lisa, 'Statistics':Lucy, 'R':Selina}
-#people = {'data mining':Smith, 'NLP':John, 'Data analysis':'Lisa', 'Statistics':'Lucy', 'R':'Selina'}
     speech = "The people who has the skill of " + skill + " is " + str(people[skill]) + "."
 
     print("Response:")
