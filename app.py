@@ -3,7 +3,7 @@
 import urllib
 import json
 import os
-import apiai
+#import apiai
 from flask import Flask
 from flask import request
 from flask import make_response
@@ -12,7 +12,8 @@ from flask import jsonify
 #import pyrebase
 # Flask app should start in global layout
 app = Flask(__name__)
-CLIENT_ACCESS_TOKEN = '4837ae5d33c5469eb61ec9fd176673e0'
+API_AI_CLIENT_ACCESS_TOKEN='4837ae5d33c5469eb61ec9fd176673e0'
+ai = apiai.ApiAI(API_AI_CLIENT_ACCESS_TOKEN)
 
 '''
 firebase = firebase.FirebaseApplication('https://silverberry-ai.firebaseio.com', authentication=None) 
@@ -49,23 +50,22 @@ def webhook():
     return r
 
 def makeWebhookResult(req):
-    if req.get("result").get("action")!= "find_talent_with_skills":
-      return {}
-    result = req.get("result")
+    if req.get("result").get("action") == "find_talent_with_skills":
+        result = req.get("result")
     parameters = result.get("parameters")
     skill = parameters.get("skills")
-
+    temp = getValue("people you want is ", skill)
     #people = {'data mining':Smith, 'NLP':John, 'Data analysis':Lisa, 'Statistics':Lucy, 'R':Selina}
-    people = {'data mining':"Smith", 'NLP':"John", 'Data analysis':"Lisa", 'Statistics':"Lucy", 'R':"Selina"}
-    people = {'data mining':232, 'NLP':543, 'Data analysis':546, 'Statistics':68, 'R':23}
-    speech = "The people you want is" + str(people[skill]) + "."
+    people = {'data mining':"Smith", 'NLP':"John", 'data analysis':"Lisa", 'statistics':"Lucy", 'R':"Selina", 'python':"Linda"}
+    #people = {'data mining':232, 'NLP':543, 'data analysis':546, 'statistics':68, 'R':23}
+    #speech = "The people you want is :" + people[skill] + "."
 
     print("Response:")
     print(speech)
 
     return {
-        "speech": speech,
-        "displayText": speech,
+        "speech": temp,
+        "displayText": temp,
         #"data": {},
         # "contextOut": [],
         "source": "apiai-onlinestore-shipping"
